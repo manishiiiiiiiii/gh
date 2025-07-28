@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thank You</title>
+  <link href="https://fonts.googleapis.com/css?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <style>
+    body {
+      background: linear-gradient(135deg, #EBEBEB 0%, #BEBEBE 40%, #928E85 70%, #36454F 100%);
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: 'Poppins', sans-serif;
+    }
+    .thank-container {
+      background: linear-gradient(120deg, #EBEBEB 60%, #BEBEBE 100%);
+      border-radius: 24px;
+      box-shadow: 0 8px 32px rgba(54,69,79,0.13), 0 2px 8px rgba(112,128,144,0.08);
+      padding: 56px 40px 40px 40px;
+      max-width: 520px;
+      text-align: center;
+      border: 2px solid #36454F;
+      position: relative;
+    }
+    .thank-container:before {
+      content: "";
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      border-radius: 24px;
+      pointer-events: none;
+      border: 4px solid #928E85;
+      opacity: 0.12;
+    }
+    }
+    .thank-title {
+      font-family: 'Dancing Script', cursive;
+      font-size: 2.8rem;
+      color: #36454F;
+      margin-bottom: 18px;
+      animation: grayGlow 2.2s ease-in-out infinite;
+      background: linear-gradient(90deg, #928E85 0%, #36454F 100%, #708090 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      text-shadow: 0 0 8px #36454F, 0 0 16px #BEBEBE, 0 1px 0 #EBEBEB, 0 0 2px #928E85;
+    }
+    @keyframes grayGlow {
+      0% { text-shadow: 0 0 8px #36454F, 0 0 16px #BEBEBE, 0 1px 0 #EBEBEB, 0 0 2px #928E85; }
+      50% { text-shadow: 0 0 18px #928E85, 0 0 32px #36454F, 0 1px 0 #EBEBEB, 0 0 8px #BEBEBE; }
+      100% { text-shadow: 0 0 8px #36454F, 0 0 16px #BEBEBE, 0 1px 0 #EBEBEB, 0 0 2px #928E85; }
+    }
+    .thank-message {
+      font-size: 1.3rem;
+      color: #030303;
+      margin-bottom: 18px;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+    }
+    .thank-sanskrit {
+      font-size: 1.15rem;
+      font-weight: 700;
+      font-style: italic;
+      margin-bottom: 28px;
+      background: linear-gradient(90deg, #928E85 0%, #36454F 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      color: #928E85;
+      letter-spacing: 0.5px;
+    }
+    .btn-home {
+      background: linear-gradient(90deg, #36454F 60%, #928E85 100%);
+      color: #EBEBEB;
+      border-radius: 24px;
+      padding: 12px 36px;
+      font-size: 1.13rem;
+      font-weight: 700;
+      box-shadow: 0 2px 12px rgba(54,69,79,0.14);
+      transition: background 0.2s, box-shadow 0.2s;
+      text-decoration: none;
+      display: inline-block;
+      border: none;
+    }
+    .btn-home:hover {
+      background: linear-gradient(90deg, #928E85 0%, #36454F 100%);
+      color: #EBEBEB;
+      box-shadow: 0 4px 16px rgba(54,69,79,0.18);
+    /* Decorative top bar */
+    box-shadow: 0 8px 32px rgba(54,69,79,0.13), 0 2px 8px rgba(112,128,144,0.08), 0 -4px 12px #03030322 inset;
+    }
+  </style>
+</head>
+<body>
+  <div class="thank-container">
+    <div class="thank-title">Thank You!</div>
+    <div class="thank-message">Thank you for your Message</div>
+    <div class="thank-sanskrit">युष्माकं कृते नित्यं कृतज्ञाः स्मः</div>
+    <a href="index.html" class="btn-home">Back to Home</a>
+  </div>
+  <script>
+    // Assuming this script is placed where the error variable is defined
+    if (!error) {
+      window.location.href = 'thankyou.html';
+    }
+  </script>
+</body>
+</html>
